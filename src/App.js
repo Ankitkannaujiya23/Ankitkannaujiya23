@@ -4,11 +4,13 @@ import Navbar from './components/Navbar';
 import Textbox from './components/Textbox';
 import React, { useState } from 'react';
 import Alert from './components/Alert';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+
+// // for the routing 
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route
+// } from "react-router-dom";
 
 
 
@@ -48,20 +50,20 @@ function App() {
   
   return(
     <>   
-<Router>
+{/* <Router> */}
 <Navbar mode={mode} switchMode={switchMode} btnMode={btnMode}/>
 <Alert alert={alert}/>  
 <div className="container my-3">
-<Switch>
+{/* <Switch>
           <Route exact path="/about">
             <About />
           </Route>
-          <Route path="/">
+          <Route path="/"> */}
               <Textbox heading="Enter Your Text Here"  mode={mode} showAlert={showAlert} />
-          </Route>
-  </Switch>
+          {/* </Route>
+  </Switch> */}
 </div>
-</Router>
+{/* </Router> */}
 
 
 
